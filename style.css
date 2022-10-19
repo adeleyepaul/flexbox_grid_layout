@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: wrap;
+}
+.box{
+    width: 269px;
+    padding: 35px;
+    min-height: 430px;
+}
+.box1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.box2{
+    background-color: hsl(184, 100%, 22%);
+}
+.box3{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca';
+    text-transform: uppercase;
+    margin: 20px 0;
+
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 20px;
+    width: 155px;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+}
+.btn{
+    margin: 60px 0 30px;
+    padding: 15px 40px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    background-color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'Lexend Deca';
+    font-weight: 700;
+}
+.btn-1{
+    color: hsl(31, 77%, 52%);
+}
+.btn-2{
+    color: hsl(184, 100%, 22%);
+}
+.btn-3{
+    color: hsl(179, 100%, 13%);
+}
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: .4s;
+}
+.grid-layout{
+    /* border: 10px solid grey; */
+    margin: auto;
+
+    /* height: 50vh; */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+}
+.grid-layout button{
+    border-radius: 10px;
+    padding: 10px;
+}
+.grid-layout button a{
+    text-decoration: none;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 375px) {
+    h1{
+        font-size: 15px;
+    }
+    .box{
+        width: 50%;
+        height: 100vh;
+        position: absolute;
+    }
+    .grid-layout{
+        /* border: 10px solid grey; */
+        margin: auto;
+    
+        /* height: 50vh; */
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+    }
+}
