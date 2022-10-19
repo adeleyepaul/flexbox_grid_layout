@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+/* [class ^= "box-"]{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    color: white; */
+    /* border: 2px solid red; */
+/* } */
+body{
+    background-color: #1a1c28;
+    height: 100vh;
+}
+.container{
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    padding: 30px;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+}
+.grid-items{
+    /* border: solid 3px black; */
+    /* border-radius: 10px; */
+    padding: 20px;
+    text-align: left;
+    color: white;
+    font-size: 40px;
+}
+.box-1{
+    background-color: red;
+    grid-column: span 5;
+    grid-row: span 12;
+}
+.box-2{
+    background-color: blue;
+    grid-column: span 3;
+    grid-row: span 12;
+}
+.box-3{
+    background-color: purple;
+    grid-column: span 4;
+    grid-row: span 12;
+}
+.box-4{
+    background-color: maroon;
+    grid-column: span 4;
+    grid-row: span 6;
+}
+.box-5{
+    background-color: green;
+    grid-column: span 4;
+    grid-row: span 6;
+}
+.grid-layout{
+    /* border: 10px solid grey; */
+    /* margin: auto; */
+
+    /* height: 50vh; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 50px;
+    /* position: absolute; */
+    /* top: 50px; */
+}
+.grid-layout button{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1px;
+}
+.grid-layout button a{
+    text-decoration: none;
+    font-size: 15px;
+}
